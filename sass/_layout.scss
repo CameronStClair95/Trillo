@@ -7,9 +7,19 @@
 }
 
 .header {
+  font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
   border-bottom: var(--color-grey-light-2);
+  display: flex;
+  // We use the justify-content property to align the items along the main axis.
+  // The main axis is the axis along which flex items are laid out.
+  // The justify-content property aligns flex items along the main axis of the current line of the flex container.
+  // This is done after any flexible lengths and any auto margins have been resolved.
+  // The justify-content property has no effect on single line flex items.
+  justify-content: space-between;
+  // We use the align-items property to align the items along the cross axis.
+  align-items: center;
 }
 
 .content {
