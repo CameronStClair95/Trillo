@@ -1,8 +1,9 @@
 .container {
   max-width: 120rem;
   margin: 8rem auto;
-  background-color: var(--color-grey-light-2);
+  background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
+
   min-height: 50rem;
 }
 
@@ -10,15 +11,10 @@
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: 1px solid var(--color-grey-light-2);
+  border-bottom: var(--line);
+
   display: flex;
-  // We use the justify-content property to align the items along the main axis.
-  // The main axis is the axis along which flex items are laid out.
-  // The justify-content property aligns flex items along the main axis of the current line of the flex container.
-  // This is done after any flexible lengths and any auto margins have been resolved.
-  // The justify-content property has no effect on single line flex items.
   justify-content: space-between;
-  // We use the align-items property to align the items along the cross axis.
   align-items: center;
 }
 
@@ -28,35 +24,38 @@
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
-  // flex property: flex-grow flex-shrink flex-basis
+
   flex: 0 0 18%;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .hotel-view {
-  background-color: var(--color-grey-light-2);
+  background-color: #fff;
+
   flex: 1;
-  // height: 80rem;
 }
 
 .detail {
   font-size: 1.4rem;
-  display: flex;
+  display: block;
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
-  border-bottom: 1px solid var(--line);
+  border-bottom: var(--line);
+}
+
+.content-row {
+  display: flex;
 }
 
 .description {
-  font-size: 1.4rem;
   background-color: #fff;
   box-shadow: var(--shadow-light);
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
-  overflow: hidden;
 }
 
 .user-reviews {
